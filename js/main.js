@@ -217,13 +217,30 @@ let vida = -5;
 
 // }
 
-do {
+// do {
 
-    vida -= 5;
-    console.log(vida);
+//     vida -= 5;
+//     console.log(vida);
 
-    if(vida == 0){
-        break;
-    }
+//     if(vida == 0){
+//         break;
+//     }
 
-} while (vida >= 0);
+// } while (vida >= 0);
+
+let numero = parseInt(prompt("Querido usuario, digame un número del 1 al 9"));
+
+// let contador = 1;
+
+// while(contador <= 10){
+
+//     console.log(numero, " X ", contador, " = ", numero*contador);
+
+//     contador++;
+
+// };
+
+for(let i = 1; i <= 10; i++){
+
+    console.log(numero, " X ", i, " = ", numero*i);
+};
