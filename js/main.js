@@ -386,35 +386,65 @@ constante PI.
 // pedro.hobbies.hobbie2 = "Bailar";
 // console.log(pedro);
 
-let edad = parseInt(prompt("Dime tu edad"));
+// let edad = parseInt(prompt("Dime tu edad"));
+
+// // 
+
+// let pelicula1 = {
+//     nombre: "Soy Leyenda",
+//     edad: 13
+// }
+
+// let pelicula2 = {
+//     nombre: "Rey leon",
+//     edad: 3
+// }
+
+// let pelicula3 = {
+//     nombre: "Demonio",
+//     edad: 18
+// }
+
+// let pelicula4 = {
+//     nombre: "A todo gas",
+//     edad: 8
+// }
+
+// let peliculas = [pelicula1,pelicula2,pelicula3,pelicula4];
+
+// for(let i = 0; i < peliculas.length; i++){
+
+//     if(peliculas[i].edad <= edad){
+//         console.log("Puedes ver ",peliculas[i].nombre);
+//     }
+// };
 
 
+// let a = 15;
+// let b = a;
 
-let pelicula1 = {
-    nombre: "Soy Leyenda",
-    edad: 13
+// a += 2;
+
+// console.log(a);
+// console.log(b);
+
+// let arrayA = ["coca cola","ron","ginebra"];
+// let arrayB = arrayA;
+
+// arrayA.push("cerveza");
+
+// console.log(arrayA);
+// console.log(arrayB);
+
+
+let miObjeto = {
+
+    edad: 0,
+    altura: "",
+    peso: 0
+
 }
 
-let pelicula2 = {
-    nombre: "Rey leon",
-    edad: 3
-}
+let edad = prompt("dime tu edad")
 
-let pelicula3 = {
-    nombre: "Demonio",
-    edad: 18
-}
-
-let pelicula4 = {
-    nombre: "A todo gas",
-    edad: 8
-}
-
-let peliculas = [pelicula1,pelicula2,pelicula3,pelicula4];
-
-for(let i = 0; i < peliculas.length; i++){
-
-    if(peliculas[i].edad <= edad){
-        console.log("Puedes ver ",peliculas[i].nombre);
-    }
-};
+miObjeto.edad = edad;
