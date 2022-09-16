@@ -203,7 +203,7 @@
 //     console.log("Hola David, eres un genio");
 // }
 
-let vida = -5;
+// let vida = -5;
 
 
 // while(vida >= 0){
@@ -228,7 +228,7 @@ let vida = -5;
 
 // } while (vida >= 0);
 
-let numero = parseInt(prompt("Querido usuario, digame un número del 1 al 9"));
+// let numero = parseInt(prompt("Querido usuario, digame un número del 1 al 9"));
 
 // let contador = 1;
 
@@ -240,7 +240,181 @@ let numero = parseInt(prompt("Querido usuario, digame un número del 1 al 9"));
 
 // };
 
-for(let i = 1; i <= 10; i++){
+// for(let i = 1; i <= 10; i++){
 
-    console.log(numero, " X ", i, " = ", numero*i);
+//     console.log(numero, " X ", i, " = ", numero*i);
+// };
+
+// let loteria = prompt("Dime el numero que va a salir en la loteria para no tener que ir al bootcamp");
+
+// function Modifica(numero){
+//     return numero + 2;
+// }
+
+// //Cuando tu ejecutas la funcion, no es estrictamente necesario que los parámetros se llamen igual
+// //que cuando has declarado la función.
+// Modifica(loteria);
+
+
+//En este caso tenemos una función anónima, alojada dentro de una variable, para ejecutar
+//la funcion, lo hacemos llamando a la variable.
+// let variableConUnaFuncionDentro = function(parametro){ return parametro ** 2};
+
+// variableConUnaFuncionDentro(5)
+
+/*
+
+Haz una aplicación que calcule el área de un círculo (pi*R2). El radio se pedirá
+por teclado (recuerda pasar de String a double con parseDouble). Usa la
+constante PI.
+
+*/
+
+// function Circulo(PI, radio){
+//     let resultado = PI * ( radio ** 2);
+//     return resultado;
+// }
+
+// const PI = 3.14;
+
+// let radio = parseInt(prompt("Dime el radio"));
+
+// let mostrar = Circulo(PI, radio);
+
+// console.log(mostrar);
+
+
+//ARRAYS
+
+// let hobbiesPedro = ["comer","gimnasio","dormir","lol"];
+
+// let hobbiesIuri = [30,"guitarra","cocinar",1992];
+
+// let hobbiesRocio = ["Leer","Patinar","Gandia"];
+
+// let coleccionHobbies = [hobbiesPedro,hobbiesIuri,hobbiesRocio];
+
+// console.log(coleccionHobbies[2][2])
+
+// let numeros = [];
+
+// let contar = parseInt(prompt("Dime un numero"));
+
+// for(let i = 1; i <= contar; i++){
+//     numeros.push(i);
+// }
+
+// console.log(numeros);
+
+
+
+
+
+// let contadorEdad = [];
+
+// let edad = parseInt(prompt("Dime tu edad"));
+
+// for(let i = edad; i >= 1; i--){
+
+//     if(i % 2 != 0){
+
+//         contadorEdad.push(i)
+//     }
+// };
+
+// console.log(contadorEdad.length);
+
+
+// let alumnosGandia = ["David","Paula","Adrià","Pedro","Israel"];
+
+// for (let i = 0; i < alumnosGandia.length; i++){
+    
+//     alumnosGandia[i] += " - Programad@r";
+    
+// }
+
+// console.log(alumnosGandia);
+
+// let frutas = ["Pera","Kiwi","Sandia"];
+
+// let verduras = ["Tomate","Alcachofa","Pimiento"];
+
+// let comida = frutas.concat(verduras);
+
+// console.log(comida);
+
+// let fruteria = frutas.join("*");
+
+// console.log(fruteria);
+
+// let bebidas = ["whiskey","ginebra","cafe","batido","ron","brandy","tenis","agua","leche","cocaCola","sprite","jagger","rekia"];
+
+// let nuevoArray = bebidas.splice(2,5).sort();
+
+// console.log(nuevoArray);
+
+//KATA EJERCICIO DNI
+
+// let letra = prompt("Dime una letra");
+
+// let numero = parseInt(prompt("Dime el número de DNI"));
+
+// let resto = numero % 23;
+
+// let array = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E","T"];
+
+// if(letra == array[resto]){
+//     console.log("El dni es correcto");
+// }else{
+//     console.log("El dni es incorrecto");
+// }
+
+
+//OBJETOS DE JAVASCRIPT
+
+// let pedro = {
+//     edad: 26,
+//     nacionalidad: "Guinea Ecuatorial",
+//     altura: "1.73",
+//     hobbies: {
+//         hobbie1: "Dibujar",
+//         hobbie2: "Musica",
+//         hobbie3: "Cocinar"
+//     }
+// };
+
+// pedro.hobbies.hobbie2 = "Bailar";
+// console.log(pedro);
+
+let edad = parseInt(prompt("Dime tu edad"));
+
+
+
+let pelicula1 = {
+    nombre: "Soy Leyenda",
+    edad: 13
+}
+
+let pelicula2 = {
+    nombre: "Rey leon",
+    edad: 3
+}
+
+let pelicula3 = {
+    nombre: "Demonio",
+    edad: 18
+}
+
+let pelicula4 = {
+    nombre: "A todo gas",
+    edad: 8
+}
+
+let peliculas = [pelicula1,pelicula2,pelicula3,pelicula4];
+
+for(let i = 0; i < peliculas.length; i++){
+
+    if(peliculas[i].edad <= edad){
+        console.log("Puedes ver ",peliculas[i].nombre);
+    }
 };
